@@ -1,0 +1,99 @@
+body {
+  outline: none;
+}
+body .live-wins_stats .same-btn {
+  background: transparent;
+  width: 125px;
+  height: 62px;
+  border-radius: 15px;
+  color: #9A9A9A;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+body .live-wins_stats .same-btn:hover {
+  transition: 0.3s;
+  background-color: #1E1E1E;
+}
+body .live-wins_stats .same-btn.active-bets {
+  width: 170px;
+  height: 62px;
+  background: #1E1E1E;
+  color: #9A9A9A;
+}
+body .live-wins_stats button {
+  border: none;
+  outline: none !important;
+}
+
+.boxes {
+  margin-top: 70px;
+}
+
+.boxes button {
+  display: block;
+  width: 100%;
+  padding: 30px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background: #1E1E1E;
+  color: #f9f9f9;
+  font-weight: 400;
+}
+
+.boxes button:nth-of-type(even) {
+  background: #1E1E1E;
+}
+
+.boxes button:focus {
+  outline: none;
+  color: #fff;
+  background: firebrick;
+}
+
+@media screen and (min-width: 600px) {
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .boxes button:nth-of-type(1) {
+    order: 4;
+  }
+  .boxes button:nth-of-type(2) {
+    order: 3;
+  }
+  .boxes button:nth-of-type(3) {
+    order: 2;
+  }
+  .boxes button:nth-of-type(4) {
+    order: 1;
+  }
+}
+.img-user {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.6);
+}
+
+.main_grid {
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+}
+
+.div-item_main {
+  align-items: start;
+  justify-content: start;
+  border-radius: 15px;
+  margin: 20px;
+  background-color: #1E1E1E;
+  width: 95%;
+  height: 70px;
+}
+.div-item_main.active-item {
+  background-color: #141414;
+}/*# sourceMappingURL=live-wins.css.map */
